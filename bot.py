@@ -3,7 +3,7 @@ from discord.ext import commands
 from discord.utils import get
 import discord
 import views
-
+import asyncio
 
 intents = discord.Intents.all()
 Intents.message_content = True
