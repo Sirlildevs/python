@@ -3,18 +3,15 @@ from discord.ext import commands
 from discord.utils import get
 import discord
 import views
-import asyncio
+
 
 intents = discord.Intents.all()
 Intents.message_content = True
 client = Client(intents=intents)
 bot = commands.Bot(command_prefix=";", intents=intents)
-gamedefult = discord.Game("-----")
+gamedefult = discord.Game("!!!!!")
 
-
-            
-
-
+        
 @bot.event
 async def on_ready():
     print("ready")
