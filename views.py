@@ -3,22 +3,9 @@ from discord.ext import commands
 from discord.utils import get
 import discord
 
-class pingview(discord.ui.View):
 
-    @discord.ui.select(
-        placeholder="Who to ping?",
-        options=[
-            discord.SelectOption(label="Lucas", value="Lucas"),
-            discord.SelectOption(label="UhOh_ICEY", value="UhOh_ICEY")
-        ]
-    )
-    async def select_callback(self, interaction : discord.Interaction, select):
-        if select.values[0] == "Lucas":
-            
-            await interaction.response.send_message("<@" + "479768035566288916" + ">")
-        else:
-            
-            await interaction.response.send_message(f"<@" + "402142267051212802" + ">")
+
+
 
 class rolesview(discord.ui.View):
     embed = discord.Embed()
@@ -27,9 +14,9 @@ class rolesview(discord.ui.View):
     embed.description = "Please select the roles you want!"
 
 
-    @discord.ui.button(label="test1", style=discord.ButtonStyle.red)
+    @discord.ui.button(label="nsfw access", style=discord.ButtonStyle.red)
     async def callback(self, interaction: discord.Interaction, button: discord.ui.button):
-        role1 = interaction.guild.get_role(1214332072940933170)
+        role1 = interaction.guild.get_role(1206037029591195750)
        
         
         await interaction.user.add_roles(role1)
@@ -37,9 +24,9 @@ class rolesview(discord.ui.View):
 
 
 
-    @discord.ui.button(label="test2", style=discord.ButtonStyle.green)
+    @discord.ui.button(label="Lost and Found", style=discord.ButtonStyle.green)
     async def callback2(self, interaction: discord.Interaction, button: discord.ui.button):
-        role2 = interaction.guild.get_role(1214332105052659744)
+        role2 = interaction.guild.get_role(1211345861280276510)
        
         
         await interaction.user.add_roles(role2)
@@ -47,9 +34,9 @@ class rolesview(discord.ui.View):
 
 
 
-    @discord.ui.button(label="test3", style=discord.ButtonStyle.blurple)
+    @discord.ui.button(label="polls", style=discord.ButtonStyle.blurple)
     async def callback3(self, interaction: discord.Interaction, button: discord.ui.button):
-        role3 = interaction.guild.get_role(1214332137055199284)
+        role3 = interaction.guild.get_role(1209598488812331080)
        
         
         await interaction.user.add_roles(role3)
@@ -57,9 +44,9 @@ class rolesview(discord.ui.View):
 
 
 
-    @discord.ui.button(label="test4", style=discord.ButtonStyle.danger)
+    @discord.ui.button(label="Gorepost Access", style=discord.ButtonStyle.danger)
     async def callback4(self, interaction: discord.Interaction, button: discord.ui.button):
-        role4 = interaction.guild.get_role(1214332168822853723)
+        role4 = interaction.guild.get_role(1206386593083166720)
        
         
         await interaction.user.add_roles(role4)
